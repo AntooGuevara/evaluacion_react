@@ -1,0 +1,121 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+.App {
+  text-align: center;
+}
+
+/* El fondo oscuro que pediste #282c34 */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* --- ESTILO DEL ÁTOMO (HOME) --- */
+.App-logo-atomo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* Evita que la foto se estire */
+  border-radius: 50%; /* Foto circular */
+  border: 5px solid #61dafb; /* Borde color React */
+  box-shadow: 0 0 25px rgba(97, 218, 251, 0.4);
+  margin-bottom: 20px;
+  pointer-events: none;
+}
+
+/* Animación de giro */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo-atomo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Enlaces morados como en tu captura */
+.App-link {
+  color: #7b2cbf;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.App-link:hover {
+  text-decoration: underline;
+}
+
+/* --- ESTILO DE LA TARJETA DE DESCARGAS --- */
+.download-card {
+  background-color: #ffffff; /* Fondo blanco para la tarjeta */
+  padding: 40px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  color: #333; /* Texto oscuro dentro de la tarjeta blanca */
+}
+
+.card-title {
+  color: #1a73e8; /* Azul del título */
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+}
+
+.card-subtitle {
+  color: #5f6368;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+}
+
+/* Grupo de botones */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Botones base */
+.btn {
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Colores de los botones según tu imagen */
+.btn-blue { 
+  background-color: #1a73e8; 
+}
+
+.btn-green { 
+  background-color: #1e8e5e; 
+}
+
+.btn-dark { 
+  background-color: #202124; 
+}
+
+.btn-back { 
+  background-color: #202124; 
+  margin-top: 5px;
+  border-top: 1px solid #e0e0e0; /* Separación sutil */
+}
